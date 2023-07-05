@@ -10,13 +10,6 @@ public class Main {
         Javalin app = Javalin.create(config -> {
 
             // Configuracion de static files
-            config.staticFiles.add(staticFileConfig -> {
-                staticFileConfig.hostedPath = "/";
-                staticFileConfig.directory = "/public";
-                staticFileConfig.location = Location.CLASSPATH;
-                staticFileConfig.precompress = false;
-                staticFileConfig.aliasCheck = null;
-            });
         });
 
         // Iniciando en el Puerto 7000
